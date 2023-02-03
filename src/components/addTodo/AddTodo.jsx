@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
 
-export default function AddTodo() {
+export default function AddTodo({ todo, setTodo }) {
   const [title, setTitle] = useState('');
   const [comment, setComment] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
     if (!title || !comment) return;
-  };
-
-  const handleTitle = e => {
-    setTitle(e.target.value);
-  };
-
-  const handleComment = e => {
-    setComment(e.target.value);
+    setTodo({ type: 'add', title, comment });
   };
 
   return (
@@ -25,14 +18,14 @@ export default function AddTodo() {
           className='title'
           type='text'
           value={title}
-          onChange={handleTitle}
+          onChange={e => setTitle(e.target.value)}
         />
         내용:
         <input
           className='comment'
           type='text'
           value={comment}
-          onChange={handleComment}
+          onChange={e => setComment(e.target.value)}
         />
       </div>
       <button className='add'>추가하기</button>

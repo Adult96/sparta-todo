@@ -38,3 +38,56 @@
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
 }
+
+.workTitle,
+.doneTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.todoItem {
+  width: 20rem;
+  margin: 1rem;
+  border: 4px solid #008081;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.itemTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.itemComment {
+  font-size: 1.5rem;
+}
+
+.working,
+.done {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.itemBtn {
+  text-align: center;
+}
+
+.deleteBtn,
+.completeBtn {
+  width: 8rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  border: 2px solid red;
+}
+
+.completeBtn {
+  border: 2px solid green;
+}
