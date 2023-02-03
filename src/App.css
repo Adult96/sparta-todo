@@ -1,0 +1,12 @@
+#root {
+  max-width: 1200px;
+  min-width: 800px;
+  margin: auto;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  padding: 1rem;
+}
