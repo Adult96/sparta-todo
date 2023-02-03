@@ -1,5 +1,4 @@
 export default function todoReducer(todo, action) {
-  console.log(todo, action);
   switch (action.type) {
     case 'add':
       const { title, comment } = action;
@@ -12,7 +11,6 @@ export default function todoReducer(todo, action) {
           isDone: false,
         },
       ];
-
     case 'delete':
       return todo.filter(v => v.id !== action.id);
     case 'complete':

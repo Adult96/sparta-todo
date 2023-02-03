@@ -1,4 +1,4 @@
-import { useReducer, useState } from 'react';
+import { useReducer } from 'react';
 import './App.css';
 import AddTodo from './components/addTodo/AddTodo';
 import Navbar from './components/navbar/Navbar';
