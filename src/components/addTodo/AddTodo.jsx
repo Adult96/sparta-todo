@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function AddTodo({ todo, setTodo }) {
+export default function AddTodo({ setTodo }) {
   const [title, setTitle] = useState('');
   const [comment, setComment] = useState('');
 

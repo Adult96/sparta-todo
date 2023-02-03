@@ -6,25 +6,11 @@ import TodoList from './components/todoList/TodoList';
 import todoReducer from './reducer/todoReducer';
 
 function App() {
-  const [todo, setTodo] = useReducer(todoReducer, [
-    {
-      id: 0,
-      title: '리액트',
-      comment: '어렵다',
-      isDone: false,
-    },
-    {
-      id: 1,
-      title: '리액트',
-      comment: '어렵다',
-      isDone: true,
-    },
-  ]);
-  console.log(todo);
+  const [todo, setTodo] = useReducer(todoReducer, []);
   return (
     <>
       <Navbar />
-      <AddTodo todo={todo} setTodo={setTodo} />
+      <AddTodo setTodo={setTodo} />
       <TodoList todo={todo} setTodo={setTodo} />
     </>
   );
