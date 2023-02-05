@@ -11,7 +11,12 @@ function App() {
     <>
       <Navbar />
       <AddTodo setTodo={setTodo} />
-      <TodoList todo={todo} setTodo={setTodo} />
+      <TodoList todo={todo} setTodo={setTodo} done={false}>
+        <p className='workTitle'>Working..🔥</p>
+      </TodoList>
+      <TodoList todo={todo} setTodo={setTodo} done={true}>
+        <p className='doneTitle'>Done..!🎉</p>
+      </TodoList>
     </>
   );
 }

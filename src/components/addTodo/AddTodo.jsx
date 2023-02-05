@@ -8,6 +8,8 @@ export default function AddTodo({ setTodo }) {
     e.preventDefault();
     if (!title || !comment) return;
     setTodo({ type: 'add', title, comment });
+    setTitle('');
+    setComment('');
   };
 
   return (
