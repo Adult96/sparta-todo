@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoItem from '../todoItem/TodoItem';
+import TodoItem from './TodoItem';
 
 export default function TodoList({ todo, setTodo, done, children }) {
   return (
